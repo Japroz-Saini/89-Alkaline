@@ -331,7 +331,6 @@ img {
         border-radius: .25rem;
     }
     .nav__link:hover {
-        text-decoration: underline;
         padding-bottom: 8px;
     }
     .active {
@@ -516,44 +515,37 @@ img {
     }
 } */
 
-.main {
-    margin-top: -1em;
-    background-color: rgb(6, 15, 58);
-    padding: 10em 0px 5em 0px;
-    height: 70vh;
-    text-align: center;
-    object-fit: cover;
-    transform: skewY(-2deg);
-}
 
-.main>h1,
-.main>button {
-    transform: skewY(2deg);
-}
 
-.main>h1 {
-    font-weight: 300;
-    font-size: 2.5em;
-    color: white;
+.main{
+    display:flex;
+    flex-wrap : wrap;
+    background-color:rgb(6, 15, 58);
+    color:white;padding:100px 50px 50px 50px;
+    justify-content:center;
+    align-items:center;
 }
-
-.main>button {
-    border: none;
-    background-color: transparent;
-    border: 1px solid white;
-    color: white;
-    font-size: 1em;
-    padding: 10px 10px;
-    border-radius: 0.2rem;
+.main > .img >img{
+    width:450px;
+    padding:10px 3vw;
 }
-
-.main>button:hover {
-    background-color: ghostwhite;
-    color: rgb(6, 15, 58);
-    transition-duration: 0.2s;
-    font-size: 1em;
+.main >.intro{
+    max-width:400px;
 }
-
+.intro> button{
+    padding:7px;
+    font-size:1em;
+    font-family:"Roboto", sans-serif;
+    border-radius:0.1rem;
+    border:1.5px solid white;
+    background-color:rgb(6, 15, 58);
+    color:white;
+}
+.intro>button:hover{
+    color:rgb(6, 15, 58);
+    background-color:white;
+    transition:0.2s;
+}
 .reasons {
     text-align: center !important;
     justify-content: center !important;
@@ -587,6 +579,7 @@ img {
 }
 
 .l-form {
+    text-align:center;
     margin-top: 10vh;
     display: flex;
     justify-content: center;
@@ -705,4 +698,16 @@ img {
     text-align: left;
     justify-content: center;
     max-width: 300px;
+}
+.main{
+    transform:skewY(-2deg);
+}
+.main>.intro, .main > .img{
+    transform:skewY(2deg);
+}
+.main>.intro>h1{
+    transform:skewY(0.5deg);
+}
+.text{
+    text-align:center;
 }
