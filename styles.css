@@ -851,3 +851,8 @@
     font-weight:400;
     text-align:center;
 }
+.testimonial{
+    margin-top:3vh;
+    margin:3vh 10vw 0px 10vw;
+    border-bottom:1px solid lightgray;
+}
