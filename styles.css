@@ -1,3 +1,7 @@
+*::selection{
+    background-color:rgb(64,225,208);
+    color:black;
+}
     /* Todo : Fix height of animation in mobile version(set to 20vh) */
 
     body {
@@ -546,7 +550,7 @@
     .intro>button {
         padding: 7px;
         font-size: 1em;
-        font-family: "Roboto", sans-serif;
+        font-family: "Inter", sans-serif;
         border-radius: 0.1rem;
         border: 1.5px solid #F13A00;
         background-color: #F13A00;
@@ -563,7 +567,7 @@
 
     .head {
         margin-top: 7vh;
-        font-family: "Roboto", sans-serif;
+        font-family: "Inter", sans-serif;
         font-weight: 300;
         text-align: center;
     }
@@ -582,7 +586,7 @@
     }
 
     .card>p {
-        font-family: "Roboto", sans-serif;
+        font-family: "Inter", sans-serif;
         font-weight: 200;
     }
 
@@ -591,7 +595,7 @@
         margin-top: 10vh;
         display: flex;
         justify-content: center;
-        font-family: "Roboto", sans-serif;
+        font-family: "Inter", sans-serif;
         align-items: center;
         height: 100vh;
     }
@@ -599,7 +603,7 @@
     .form {
         border: 1px solid lightgray;
         width: 360px;
-        padding: 4rem 2rem;
+        padding: 1rem 2rem;
         border-radius: 1rem;
         box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
     }
@@ -685,27 +689,6 @@
     .form__input:focus {
         border: 1.5px solid rgb(13, 122, 150);
     }
-
-    .register {
-        display: flex;
-        flex-wrap: wrap;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .register>.l-form {
-        margin: 10px 15px;
-    }
-
-    .register>.text {
-        margin: 10px 15px;
-        text-align: left;
-        justify-content: center;
-        max-width: 450px;
-        align-items: center;
-    }
-
     .text {
         text-align: center;
     }
@@ -732,7 +715,7 @@
     }
 
     .intro>h5 {
-        font-family: "Roboto", sans-serif;
+        font-family: "Inter", sans-serif;
         font-weight: 300;
         font-size: 1em;
         text-align: left;
@@ -791,4 +774,49 @@
 
     .benefits>.image {
         padding: 20px;
+        margin-bottom:10vh;
     }
+    .form__input{
+        font-size:1em;
+    }
+.register {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .register>div {
+        width:400px;
+        margin:0 auto;
+    }
+    .register >.l-form > .form{
+        width:500px;
+    }
+    .register > .adress{
+        margin-top:50px;
+        margin-bottom:50px;
+        text-align:left;
+        padding:10px;
+    }
+
+.footer{
+    font-family:"Inter", sans-serif;
+    background-color:rgb(51, 51, 51);
+    color:white;
+    display:flex;
+    flex-wrap:wrap;
+}
+.footer > ul{
+    margin:10px auto;
+}
+.footer > ul > li{
+    font-weight:300;
+    font-size:0.9em;
+    padding:2.5px 0px;
+    color:ghostwhite;
+}
+.footer > ul > .list_head{
+    font-weight:400;
+    font-size:1.5em;
+    padding:5px;
+    text-align:left;
+}
