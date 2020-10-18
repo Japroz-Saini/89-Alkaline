@@ -23,10 +23,18 @@ document.addEventListener("DOMContentLoaded", () => {
         console.log(`Letter ${i} = ${logo[i].getTotalLength()}`)
     }
 
-    // const input = document.querySelector(".unique");
-    // input.style.height = "100px";
+    const input = document.querySelector(".unique");
+    input.style.height = "100px";
 
     // Check
+    localStorage.setItem(data, `
+    {
+        "name" : "Japroz Singh Saini",
+        "website" : "89 Alkaline",
+        "license" : "MIT",
+        "owner" : "Pritpal Singh Saini",
+    }
+    `);
     console.log(JSON.stringify(`
     {
         "name" : "Japroz Singh Saini",
